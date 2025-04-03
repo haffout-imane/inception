@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  mariaDB:
+    build: ./requirements/mariadb
+    container_name: mariadb
+    image: mariaDB
+    volumes:
+      - mdb:/var/lib/mysql
