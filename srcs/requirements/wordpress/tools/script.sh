@@ -27,6 +27,7 @@ if [ ! -d "/var/www/html/wordpress" ]; then
 fi
 
 cd /var/www/html/wordpress
+rm -rf /var/www/html/wordpress/*
 
 # download the latest version of WordPress
 wp core download --allow-root
